@@ -9,6 +9,7 @@ import SessionTimer from "@/components/SessionTimer";
 import ScoreCard from "@/components/ScoreCard";
 import { useCamera } from "@/hooks/useCamera";
 import CameraView from "@/components/CameraView";
+import PoseIllustration from "@/components/PoseIllustration";
 
 type SessionState = "loading" | "camera-prompt" | "countdown" | "active" | "pose-complete" | "done";
 
@@ -479,6 +480,12 @@ export default function SessionClient() {
                     {poseIndex + 1}/{goal.poses.length}
                   </span>
                 </div>
+                
+                {/* Pose Illustration */}
+                <div className="w-full h-32 rounded-lg mb-3 flex items-center justify-center overflow-hidden" style={{ background: "rgba(255,255,255,0.4)" }}>
+                  <PoseIllustration poseId={currentPose.id} className="w-full h-full p-2" />
+                </div>
+
                 <p className="text-xs leading-relaxed mb-3" style={{ color: "var(--text-secondary)" }}>
                   {currentPose.description}
                 </p>

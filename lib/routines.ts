@@ -10,6 +10,7 @@ export interface Pose {
   description: string;
   cue: string;
   breathCue?: string;
+  image?: string;
 }
 
 export interface Goal {
@@ -29,9 +30,9 @@ export const goals: Goal[] = [
     title: "Stress Management",
     icon: "🧘",
     tagline: "Release tension, calm the mind",
-    colorFrom: "#7C3AED",
-    colorTo: "#5B21B6",
-    textColor: "#DDD6FE",
+    colorFrom: "#5BB8B0",
+    colorTo: "#5AA1B8",
+    textColor: "#1E293B",
     poses: [
       {
         id: "box-breathing",
@@ -84,9 +85,9 @@ export const goals: Goal[] = [
     title: "Flexibility",
     icon: "🤸",
     tagline: "Open your body, free your movement",
-    colorFrom: "#06B6D4",
-    colorTo: "#0284C7",
-    textColor: "#BAE6FD",
+    colorFrom: "#5AB890",
+    colorTo: "#5BB8B0",
+    textColor: "#1E293B",
     poses: [
       {
         id: "standing-forward-fold",
@@ -140,9 +141,9 @@ export const goals: Goal[] = [
     title: "Posture",
     icon: "🏛️",
     tagline: "Stand tall, move with confidence",
-    colorFrom: "#10B981",
-    colorTo: "#059669",
-    textColor: "#A7F3D0",
+    colorFrom: "#5AB870",
+    colorTo: "#5AB890",
+    textColor: "#1E293B",
     poses: [
       {
         id: "mountain-pose",
@@ -195,9 +196,9 @@ export const goals: Goal[] = [
     title: "General Fitness",
     icon: "💪",
     tagline: "Build strength from the inside out",
-    colorFrom: "#F59E0B",
-    colorTo: "#D97706",
-    textColor: "#FDE68A",
+    colorFrom: "#5A84B8",
+    colorTo: "#5AA1B8",
+    textColor: "#1E293B",
     poses: [
       {
         id: "sun-salutation-a",
@@ -250,9 +251,9 @@ export const goals: Goal[] = [
     title: "Better Sleep",
     icon: "🌙",
     tagline: "Wind down, drift into deep rest",
-    colorFrom: "#4F46E5",
-    colorTo: "#3730A3",
-    textColor: "#C7D2FE",
+    colorFrom: "#5BB8B0",
+    colorTo: "#5A84B8",
+    textColor: "#1E293B",
     poses: [
       {
         id: "legs-up-wall",
@@ -305,9 +306,9 @@ export const goals: Goal[] = [
     title: "Relaxation",
     icon: "☁️",
     tagline: "Soften, surrender, restore",
-    colorFrom: "#8B5CF6",
-    colorTo: "#6D28D9",
-    textColor: "#DDD6FE",
+    colorFrom: "#5AA1B8",
+    colorTo: "#5BB8B0",
+    textColor: "#1E293B",
     poses: [
       {
         id: "seated-meditation",
@@ -358,9 +359,9 @@ export const goals: Goal[] = [
     title: "Weight Management",
     icon: "⚖️",
     tagline: "Energize, strengthen, and metabolize",
-    colorFrom: "#EF4444",
-    colorTo: "#DC2626",
-    textColor: "#FECACA",
+    colorFrom: "#5AB890",
+    colorTo: "#5AB870",
+    textColor: "#1E293B",
     poses: [
       {
         id: "sun-b",
@@ -414,9 +415,9 @@ export const goals: Goal[] = [
     title: "Back/Neck Relief",
     icon: "🫁",
     tagline: "Decompress, release, realign",
-    colorFrom: "#0891B2",
-    colorTo: "#0E7490",
-    textColor: "#A5F3FC",
+    colorFrom: "#5AB870",
+    colorTo: "#5BB8B0",
+    textColor: "#1E293B",
     poses: [
       {
         id: "neck-rolls",
@@ -466,9 +467,9 @@ export const goals: Goal[] = [
     title: "Menstrual Wellness",
     icon: "🌸",
     tagline: "Nurture your cycle, ease discomfort",
-    colorFrom: "#EC4899",
-    colorTo: "#BE185D",
-    textColor: "#FBCFE8",
+    colorFrom: "#5A84B8",
+    colorTo: "#5AB890",
+    textColor: "#1E293B",
     poses: [
       {
         id: "childs-pose-wide",
@@ -519,9 +520,9 @@ export const goals: Goal[] = [
     title: "PCOS Wellness",
     icon: "🌿",
     tagline: "Balance hormones, restore harmony",
-    colorFrom: "#16A34A",
-    colorTo: "#15803D",
-    textColor: "#BBF7D0",
+    colorFrom: "#5BB8B0",
+    colorTo: "#5AB870",
+    textColor: "#1E293B",
     poses: [
       {
         id: "diaphragmatic-breath",

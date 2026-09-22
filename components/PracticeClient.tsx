@@ -45,7 +45,7 @@ export default function PracticeClient() {
       {/* Orb bg */}
       <div
         className="orb w-96 h-96 -top-24 -right-24 opacity-20"
-        style={{ background: selectedGoal ? selectedGoal.colorFrom : "var(--accent-violet)" }}
+        style={{ background: selectedGoal ? selectedGoal.colorFrom : "var(--accent-primary)" }}
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-28 pb-16 relative z-10">
@@ -58,7 +58,7 @@ export default function PracticeClient() {
         >
           <p
             className="text-xs font-semibold uppercase tracking-widest mb-2"
-            style={{ color: "var(--accent-violet)" }}
+            style={{ color: "var(--accent-primary)" }}
           >
             Step 1 of 2
           </p>

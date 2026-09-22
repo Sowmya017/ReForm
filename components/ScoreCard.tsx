@@ -82,7 +82,7 @@ export default function ScoreCard({
       {/* Score ring */}
       <div className="relative w-28 h-28 mx-auto mb-6">
         <svg width="112" height="112" style={{ transform: "rotate(-90deg)" }}>
-          <circle cx="56" cy="56" r="46" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="8" />
+          <circle cx="56" cy="56" r="46" fill="none" stroke="var(--border-subtle)" strokeWidth="8" />
           <motion.circle
             cx="56"
             cy="56"
@@ -121,7 +121,7 @@ export default function ScoreCard({
       {/* Stats row */}
       <div
         className="grid grid-cols-3 gap-3 mb-6 rounded-xl p-3"
-        style={{ background: "rgba(0,0,0,0.2)" }}
+        style={{ background: "rgba(255,255,255,0.5)" }}
       >
         <div>
           <div

@@ -101,15 +101,15 @@ export default function LandingHero() {
         {/* Orb glows */}
         <div
           className="orb w-96 h-96 top-10 -left-24 opacity-30"
-          style={{ background: "var(--accent-violet)" }}
+          style={{ background: "var(--accent-primary)" }}
         />
         <div
           className="orb w-80 h-80 bottom-10 -right-20 opacity-20"
-          style={{ background: "var(--accent-cyan)" }}
+          style={{ background: "var(--accent-supporting)" }}
         />
         <div
           className="orb w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10"
-          style={{ background: "var(--accent-pink)" }}
+          style={{ background: "var(--accent-secondary)" }}
         />
 
         {/* Grid pattern overlay */}
@@ -130,12 +130,12 @@ export default function LandingHero() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium mb-8"
             style={{
-              background: "rgba(124, 58, 237, 0.15)",
-              border: "1px solid rgba(124, 58, 237, 0.3)",
-              color: "#C4B5FD",
+              background: "rgba(91, 184, 176, 0.15)",
+              border: "1px solid rgba(91, 184, 176, 0.3)",
+              color: "var(--accent-deep)",
             }}
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-violet-400 pulse-glow" />
+            <span className="w-1.5 h-1.5 rounded-full pulse-glow" style={{ backgroundColor: "var(--accent-primary)" }} />
             AI-Powered Wellness · Free · Private
           </motion.div>
 
@@ -186,7 +186,7 @@ export default function LandingHero() {
                 color: "var(--text-secondary)",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(124,58,237,0.4)";
+                (e.currentTarget as HTMLAnchorElement).style.borderColor = "var(--accent-primary)";
                 (e.currentTarget as HTMLAnchorElement).style.color = "var(--text-primary)";
               }}
               onMouseLeave={(e) => {
@@ -258,7 +258,7 @@ export default function LandingHero() {
           <AnimatedSection className="text-center mb-16">
             <p
               className="text-xs font-semibold uppercase tracking-widest mb-3"
-              style={{ color: "var(--accent-violet)" }}
+              style={{ color: "var(--accent-primary)" }}
             >
               The ReForm Flow
             </p>
@@ -288,8 +288,8 @@ export default function LandingHero() {
                     <div
                       className="text-2xl w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
                       style={{
-                        background: "rgba(124, 58, 237, 0.12)",
-                        border: "1px solid rgba(124,58,237,0.2)",
+                        background: "rgba(91, 184, 176, 0.12)",
+                        border: "1px solid rgba(91, 184, 176, 0.2)",
                       }}
                     >
                       {s.icon}
@@ -297,7 +297,7 @@ export default function LandingHero() {
                     <div>
                       <div
                         className="text-xs font-mono font-semibold mb-1"
-                        style={{ color: "var(--accent-violet)" }}
+                        style={{ color: "var(--accent-primary)" }}
                       >
                         Step {s.step}
                       </div>
@@ -328,13 +328,13 @@ export default function LandingHero() {
       <section id="goals" className="py-24 px-4 sm:px-6 relative overflow-hidden">
         <div
           className="orb w-96 h-96 -right-48 top-1/2 -translate-y-1/2 opacity-10"
-          style={{ background: "var(--accent-cyan)" }}
+          style={{ background: "var(--accent-secondary)" }}
         />
         <div className="max-w-6xl mx-auto relative z-10">
           <AnimatedSection className="text-center mb-16">
             <p
               className="text-xs font-semibold uppercase tracking-widest mb-3"
-              style={{ color: "var(--accent-cyan)" }}
+              style={{ color: "var(--accent-secondary)" }}
             >
               10 Wellness Goals
             </p>
@@ -420,8 +420,8 @@ export default function LandingHero() {
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-4"
                     style={{
-                      background: "rgba(6, 182, 212, 0.12)",
-                      border: "1px solid rgba(6,182,212,0.2)",
+                      background: "rgba(91, 184, 176, 0.12)",
+                      border: "1px solid rgba(91, 184, 176, 0.2)",
                     }}
                   >
                     {f.icon}
@@ -446,7 +446,7 @@ export default function LandingHero() {
       <section className="py-24 px-4 sm:px-6 relative overflow-hidden">
         <div
           className="orb w-96 h-96 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-15"
-          style={{ background: "var(--accent-violet)" }}
+          style={{ background: "var(--accent-primary)" }}
         />
         <AnimatedSection className="relative z-10 text-center max-w-2xl mx-auto">
           <h2

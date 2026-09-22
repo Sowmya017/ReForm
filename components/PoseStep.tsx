@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Pose } from "@/lib/routines";
 
+import PoseIllustration from "./PoseIllustration";
+
 interface PoseStepProps {
   pose: Pose;
   index: number;
@@ -54,57 +56,64 @@ export default function PoseStep({
 
       {/* Content */}
       <div
-        className="flex-1 rounded-xl p-4 mb-3"
+        className="flex-1 rounded-xl p-4 mb-3 flex flex-col sm:flex-row gap-4"
         style={{
           background: "var(--bg-card)",
           border: "1px solid var(--border-subtle)",
         }}
       >
-        <div className="flex items-start justify-between gap-2">
-          <div>
-            <h4
-              className="font-display font-semibold text-sm"
-              style={{ color: "var(--text-primary)" }}
-            >
-              {pose.name}
-            </h4>
-            {pose.sanskrit && (
-              <p
-                className="text-xs italic mt-0.5"
-                style={{ color: "var(--text-muted)" }}
-              >
-                {pose.sanskrit}
-              </p>
-            )}
-          </div>
-          <span
-            className="text-xs font-mono font-medium px-2 py-0.5 rounded-full flex-shrink-0"
-            style={{
-              background: `${accentColor}22`,
-              color: accentText,
-            }}
-          >
-            {formatDuration(pose.duration)}
-          </span>
+        {/* Visual Illustration */}
+        <div className="w-full sm:w-24 h-32 sm:h-24 bg-secondary/10 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+          <PoseIllustration poseId={pose.id} className="w-full h-full p-2" />
         </div>
 
-        <p
-          className="text-xs mt-2 leading-relaxed"
-          style={{ color: "var(--text-secondary)" }}
-        >
-          {pose.description}
-        </p>
-
-        {/* Breath cue */}
-        {pose.breathCue && (
-          <div
-            className="mt-2 flex items-center gap-1.5 text-xs"
-            style={{ color: accentText }}
-          >
-            <span style={{ opacity: 0.7 }}>🌬</span>
-            <span style={{ opacity: 0.9 }}>{pose.breathCue}</span>
+        <div className="flex-1">
+          <div className="flex items-start justify-between gap-2">
+            <div>
+              <h4
+                className="font-display font-semibold text-sm"
+                style={{ color: "var(--text-primary)" }}
+              >
+                {pose.name}
+              </h4>
+              {pose.sanskrit && (
+                <p
+                  className="text-xs italic mt-0.5"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  {pose.sanskrit}
+                </p>
+              )}
+            </div>
+            <span
+              className="text-xs font-mono font-medium px-2 py-0.5 rounded-full flex-shrink-0"
+              style={{
+                background: `${accentColor}22`,
+                color: accentText,
+              }}
+            >
+              {formatDuration(pose.duration)}
+            </span>
           </div>
-        )}
+
+          <p
+            className="text-xs mt-2 leading-relaxed"
+            style={{ color: "var(--text-secondary)" }}
+          >
+            {pose.description}
+          </p>
+
+          {/* Breath cue */}
+          {pose.breathCue && (
+            <div
+              className="mt-2 flex items-center gap-1.5 text-xs"
+              style={{ color: accentText }}
+            >
+              <span style={{ opacity: 0.7 }}>🌬</span>
+              <span style={{ opacity: 0.9 }}>{pose.breathCue}</span>
+            </div>
+          )}
+        </div>
       </div>
     </motion.div>
   );
